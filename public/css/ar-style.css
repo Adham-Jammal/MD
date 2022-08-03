@@ -1,0 +1,47 @@
+@import url('http://fonts.cdnfonts.com/css/cairo');
+@font-face {
+   font-family: Roboto ;
+   src: url("/fonts/Roboto-Black.ttf");
+   src: url("/fonts/Roboto-BlackItalic.ttf");
+   src: url("/fonts/Roboto-Bold.ttf");
+   src: url("/fonts/Roboto-BoldCondensed.ttf");
+   src: url("/fonts/Roboto-BoldCondensedItalic.ttf");
+   src: url("/fonts/Roboto-BoldItalic.ttf");
+   src: url("/fonts/Roboto-Condensed.ttf");
+   src: url("/fonts/Roboto-CondensedItalic.ttf");
+   src: url("/fonts/Roboto-Italic.ttf");
+   src: url("/fonts/Roboto-Light.ttf");
+   src: url("/fonts/Roboto-LightItalic.ttf");
+   src: url("/fonts/Roboto-Medium.ttf");
+   src: url("/fonts/Roboto-Regular.ttf");
+   src: url("/fonts/Roboto-Thin.ttf");
+ }
+*{
+    direction: rtl;
+    font-family: 'Cairo', sans-serif;
+   }
+
+/* Responsive */
+@media (min-width:1200px){
+
+}
+@media (max-width:1200px){
+
+}
+/* ************* */
+@media (max-width:991px){
+
+}
+/* ************* */
+@media (max-width:768px){
+    
+}
+/* ************* */
+@media (max-width:500px){
+
+}
+/* Scroll Top */
+#scroll_top{
+    transform: rotate(-90deg);
+    left: -60px;
+}

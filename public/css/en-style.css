@@ -1,0 +1,30 @@
+
+@import url('http://fonts.cdnfonts.com/css/cairo');
+
+*{
+    font-family: 'Cairo', sans-serif;
+   }
+/* Responsive */
+@media (min-width:1200px){
+
+}
+@media (max-width:1200px){
+
+}
+/* ************* */
+@media (max-width:991px){
+
+}
+/* ************* */
+@media (max-width:768px){
+
+}
+/* ************* */
+@media (max-width:500px){
+
+}
+/* Scroll Top */
+#scroll_top{
+    transform: rotate(90deg);
+    right: -60px;
+}
