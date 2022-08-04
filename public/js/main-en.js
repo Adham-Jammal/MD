@@ -23,9 +23,9 @@ window.addEventListener("load", () => {
 let scrollTopButton = document.getElementById("scroll_top");
 window.onscroll = () => {
     if (scrollY >= 430) {
-        scrollTopButton.style = "right: 10px;transform: rotate(0deg);";
+        scrollTopButton.style = "bottom: 10px;";
     } else {
-        scrollTopButton.style = "right: -60px;";
+        scrollTopButton.style = "bottom: -60px;";
     }
 };
 scrollTopButton.onclick = function () {
@@ -35,30 +35,8 @@ scrollTopButton.onclick = function () {
     });
 };
 
-$(".vision-carousel").owlCarousel({
-    margin : 10,
-    loop: true,
-    rtl : false,
-    autoplay: true,
-    autoplaySpeed: 1000,
-    autoplayTimeout: 6000,
-    dots: false,
-    smartSpeed: 1000,
-    lazyLoad: true,
-    nav: true,
-    navText : ["","<i class='fa fa-chevron-right'></i>"],
-    responsive:{
-        400:{
-            items:1,
-        },
-        768:{
-            items:3,
-        },
-    }
-
-  });
-  $(".message-carousel").owlCarousel({
-    margin : 20,
+$(".owl-carousel").owlCarousel({
+    items: 1,
     loop: true,
     rtl : false,
     autoplay: true,
@@ -68,17 +46,17 @@ $(".vision-carousel").owlCarousel({
     smartSpeed: 1000,
     lazyLoad: true,
     nav: false,
-    navText : ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
-    responsive:{
-        400:{
-            items:2,
+    responsive: {
+        0: {
+            items: 1,
+            nav: false,
         },
-        768:{
-            items:3,
+        600: {
+            items: 1,
+            nav: false,
         },
-        1000:{
-            items:4,
+        1000: {
+            items: 1,
         },
-
-    }
+    },
   });

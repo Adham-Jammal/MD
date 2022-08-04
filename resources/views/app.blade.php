@@ -27,7 +27,7 @@
 
 <body>
     <div id="preloader"></div>
-    <button id="scroll_top"><i class="bi bi-chevron-up"></i></button>
+    <button id="scroll_top">&#10230;</button>
     {{-- <button id="scroll_top"><i class="bi bi-chevron-up"></i></button> --}}
     @include('layouts.header')
 

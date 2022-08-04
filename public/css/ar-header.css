@@ -48,7 +48,7 @@
       align-items: center;
   }
   .content .logo a img{
-      width: 175px;
+      width: 120px;
   }
   .header-fix .content .logo a{
     color: var(--main-color) !important;
@@ -91,22 +91,6 @@
   }
   .header-fix .content .links li a{
     color: var(--main-color) !important;
-  }
-  .content .links li a:after {
-    background: none repeat scroll 0 0 transparent;
-    bottom: 0;
-    content: "";
-    display: block;
-    height: 2px;
-    right: 50%;
-    bottom: 7px;
-    position: absolute;
-    background: var(--main-color);
-    transition: width 0.3s ease 0s, right 0.3s ease 0s;
-    width: 0;
-  }
-  .header-fix .content .links li a:after{
-    background-color: var(--main-color);
   }
   .content .links li a:hover{
     opacity: 1;

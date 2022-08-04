@@ -1,9 +1,224 @@
 
-@import url('http://fonts.cdnfonts.com/css/cairo');
-
+@import url('http://fonts.cdnfonts.com/css/prompt');
+@import url('http://fonts.cdnfonts.com/css/italiana');
+@import url('http://fonts.cdnfonts.com/css/roboto');
 *{
-    font-family: 'Cairo', sans-serif;
+    font-family: 'Prompt', sans-serif;
+}
+    /* Hero */
+    .hero{
+        height: calc(100vh - 100px);
+        margin-top: 100px;
+    }
+    .hero .container{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .hero .content{
+        position: relative;
+        width: 50%;
+    }
+    .hero .content h2{
+        text-align: center;
+        font-family: 'Italiana';
+        font-size: 8.4rem;
+        font-weight: 300;
+        line-height: 75px;
+        text-transform: uppercase;
+    }
+    .hero .content h2.with-text{
+        display: inline-flex;
+        justify-content: center;
+    }
+    .hero .content h2 span{
+        font-size: 1.3rem;
+        line-height: 20px;
+        font-weight: 200;
+        width: 40%;
+        margin-left: 15px;
+        display: inline-block;
+        text-align: left;
+        text-transform: none;
+    }
+
+   /* About */
+   .about{
+    position: relative;
+    padding: 75px;
    }
+   .about .about-title{
+    font-family: 'Italiana', sans-serif;
+    font-size: 20rem;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.1);
+    text-transform: uppercase;
+   }
+   .about .column{
+    display: flex;
+    justify-content: center;
+   }
+   .about .column h4{
+    margin-bottom: 15px;
+    font-size: 2rem;
+    color: rgb(178, 178, 178);
+    font-weight: 600;
+   }
+   .about .column p{
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 25px;
+    margin-bottom: 15px;
+   }
+   .about .column ul{
+    list-style: none;
+   }
+   .about .column ul li{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    line-height: 25px;
+}
+.about .column ul li i{
+    margin-right: 5px;
+}
+/* Works */
+.works{
+    position: relative;
+}
+.works h2{
+    margin-bottom: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+}
+.works .col-md-6{
+    display: flex;
+    justify-content: center;
+}
+.works .content a{
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--white);
+}
+.works .content a:hover .arrow{
+    transform: translateX(5px);
+}
+.works .content a .arrow{
+    margin-left: 10px;
+    font-size: 25px;
+}
+.works .content p{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: rgb(178, 178, 178);
+}
+.works img {
+    width: 100%;
+    margin: 30px 0;
+}
+/* ADVANTAGES */
+.advantages{
+    position: relative;
+}
+.advantages h2{
+    text-align: center;
+    font-weight: 300;
+    font-size: 2.4rem;
+    margin-bottom: 50px;
+}
+.advantages .image-content img{
+    width: 100%;
+}
+.advantages .text-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.advantages .text-content ul{
+    list-style-position: inside;
+}
+.advantages .text-content li{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 28px;
+    color: rgb(178, 178, 178);
+}
+.advantages .text-content a{
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--white);
+}
+.advantages .text-content a .arrow{
+    margin-left: 10px;
+    font-size: 25px;
+}
+.advantages .text-content a:hover .arrow{
+    transform: translateX(5px);
+}
+/* Mission */
+.mission{
+    padding: 75px 0;
+    position: relative;
+    overflow: hidden;
+}
+.mission h2{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: rgb(178, 178, 178)
+}
+.mission .slider .slide {
+    padding: 40px 0;
+    width: 80%;
+    margin: 0 auto;
+}
+.mission .slider .slide p{
+    font-family: 'Italiana', sans-serif;
+    font-size: 2.6rem;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+}
+.mission span{
+    font-family: 'Italiana', sans-serif;
+    position: absolute;
+    top: -30%;
+    left: 13%;
+    font-size: 85rem;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.1);
+
+}
+/* gallery */
+.gallery{
+    position: relative;
+
+}
+.gallery .images{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.gallery .images img{
+    width: 15%;
+    margin: 0.8%;
+}
+.gallery .single-image{
+    display: flex;
+    justify-content: center;
+    margin-top: 75px;
+    margin-bottom: 20px;
+}
+.gallery .single-image img{
+    width: 40%;
+}
 /* Responsive */
 @media (min-width:1200px){
 
@@ -25,6 +240,7 @@
 }
 /* Scroll Top */
 #scroll_top{
-    transform: rotate(90deg);
-    right: -60px;
+    transform: rotate(-90deg);
+    right: 0;
+    bottom: -60px;
 }

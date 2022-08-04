@@ -40,9 +40,11 @@ html::-webkit-scrollbar-track{
 }
 
 html::-webkit-scrollbar-thumb{
-    background:var(--main-color);
+    background:rgb(178, 178, 178);
 }
 body{
+    color: var(--white);
+    background-color: #000000;
     overflow-x: hidden;
     background-position: center;
     background-size: contain;
@@ -207,17 +209,19 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--main-color);
+    background-color: transparent;
     color: #fff;
     cursor: pointer;
     z-index: 4;
     border-radius: 50%;
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: 800;
     transition: 1s;
 }
 #scroll_top:hover{
-    background-color: var(--dark-color);
+    background: transparent;
+    color: red;
+    transform: scale(1.1) rotate(-90deg) translateX(10px);
 }
 
 @media (max-width:500px) {
