@@ -230,11 +230,8 @@
         .wrapper .menu-icon img{
             width: 100px;
             position: relative;
-            top: 10px;
           }
-          .wrapper .menu-icon .mobile-logo{
-            top: 20px;
-          }
+
         .wrapper .menu-icon .burger{
             width: 25px;
             transform: scaleX(-1);
@@ -350,5 +347,42 @@
     .wrapper .search-box input{
       padding-right: 30px;
     }
+  }
+
+  .menu-icons {
+    width: 20px;
+    height: 14px;
+    cursor: pointer;
+    position: relative;
+  }
+  .menu-icons span {
+    background-color: white;
+    height: 2px;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    transition: all 0.3s ease;
+  }
+  .menu-icons span:first-child {
+    top: 0;
+  }
+  .menu-icons span:nth-child(2) {
+    top: 6px;
+  }
+  .menu-icons span:last-child {
+    top: 12px;
+  }
+  .menu-icons:hover span:nth-child(2) {
+    opacity: 0;
+  }
+  .menu-icons .active {
+    top: 6px;
+    background-color: red;
+  }
+  .menu-icons:hover span:first-child {
+    transform: rotate(45deg);
+  }
+  .menu-icons:hover span:last-child {
+    transform: rotate(-45deg);
   }
 

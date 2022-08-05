@@ -1,8 +1,10 @@
 let preloader = document.getElementById("preloader");
 if (preloader) {
     window.addEventListener("load", () => {
-        preloader.remove();
-    });
+        preloader.style.transition = '.5s';
+        preloader.style.opacity = '0';
+        preloader.style.visibility = 'hidden';
+        });
 }
 
 window.addEventListener("load", () => {
@@ -60,3 +62,41 @@ $(".owl-carousel").owlCarousel({
         },
     },
   });
+
+//   text animation
+const hero = document.querySelector('.hero');
+const text = hero.querySelectorAll('h2');
+const walk = 50; // px
+const svg = document.querySelector('.line-svg');
+const circle =  document.querySelector('.red-circle');
+
+function shadow(e) {
+    const {
+        offsetWidth: width,
+        offsetHeight: height
+    } = hero;
+    let {
+        offsetX: x,
+        offsetY: y
+    } = e;
+
+    const xWalk = Math.round((x / width * walk) - (walk / 2));
+    const yWalk = Math.round((y / height * walk) - (walk / 2));
+    for(let i = 0 ; i < text.length ; i++){
+        text[i].style.textShadow = `
+        ${xWalk}px ${yWalk}px 0 rgba(255, 255, 255, 0.1)`;
+
+    }
+    circle.style = ` right : calc( 25% + ${ yWalk}px)`;
+
+}
+
+hero.addEventListener('mousemove', shadow);
+var mouseX;
+var mouseY;
+window.onmousemove = handleMouseMove;
+function handleMouseMove(event) {
+  event = event || window.event;
+  svg.style.top=event.clientY/100 + 75 + "px";
+  svg.style.left=event.clientX/100 + "px";
+}

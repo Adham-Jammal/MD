@@ -1,18 +1,19 @@
 .wrapper{
     font-family:"Noto Kufi Arabic";
     top: 0;
-    background: #fff;
+    background: transparent;
     width: 100%;
     z-index: 11;
     margin: 0;
     transition: all 0.3s ease 0s;
   }
   .header-fix {
-    background: #fff !important;
+    background: transparent !important;
     z-index: 9;
   }
   .wrapper nav{
-    position: relative;
+    position: fixed;
+    z-index: 2;
     display: flex;
     margin: 0 auto;
     padding-top: 5px;
@@ -59,8 +60,25 @@
       float: right;
   }
   .content .links li{
+    position: relative;
     list-style: none;
     line-height: 70px;
+  }
+  .content .links li a::after{
+    background-color: red;
+    border-radius: 50%;
+    content: '';
+    display: block;
+    height: 6px;
+    opacity: 0;
+    position: absolute;
+    right: -6px;
+    top: 2px;
+    transition: opacity .2s ease-out;
+    width: 6px;
+  }
+  .content .links li a:hover::after{
+    opacity: 1;
   }
   li#lang{
     border: 1px solid var(--main-color);
@@ -80,25 +98,26 @@
   .content .links li a,
   .content .links li label{
     position: relative;
-    color: #1D1B19 !important;
-    font-size: 1.8rem;
-    font-weight: 600;
-    padding: 25px;
+    color: #fff !important;
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin: 25px;
     transition: all 0.3s ease;
     text-decoration: none;
     z-index: 2;
-    opacity: .5;
   }
   .header-fix .content .links li a{
     color: var(--main-color) !important;
   }
+
+
   .content .links li a:hover{
     opacity: 1;
   }
-  .content .links li a:hover:after{
+  /* .content .links li a:hover:after{
     width: 70%;
     right: 15%;
-  }
+  } */
   li#lang a:hover:after{
     width: 0 !important;
   }
@@ -195,17 +214,14 @@
 
   @media screen and (max-width: 1020px){
     .wrapper{
-      background: #fff ;
+      background: transparent ;
     }
-    .wrapper nav{
-        background-color: transparent;
-    }
+
     .content .logo{
         display: none;
     }
     .wrapper .menu-icon{
         display: flex;
-        flex-direction: row-reverse;
         padding: 0 10px;
         width: 100%;
         align-items: center;
@@ -221,6 +237,7 @@
           }
         .wrapper .menu-icon .burger{
             width: 25px;
+            transform: scaleX(-1);
         }
         nav .content .links::before{
             display: none;
@@ -229,23 +246,22 @@
       content: "\f00d";
     }
     nav .content .links{
-      display: block;
-      position: fixed;
-      background: #ffffffe0;
-      height: 100%;
-      width: 100%;
-      top: 70px;
-      right: -100%;
-      margin-right: 0;
-      padding: 0;
-      max-width: 350px;
-      overflow-y: auto;
-      transition: all 0.3s ease;
+        display: block;
+        position: fixed;
+        background: #ffffffe0;
+        width: 100%;
+        top: -100%;
+        margin-right: 0;
+        height: auto;
+        padding: 0;
+        overflow-y: auto;
+        transition: all 0.3s ease;
     }
     nav #show-menu:checked ~ .content .links{
-      background: url(/img/background.png);
-      background-color: #fff;
-      right: 0%;
+        padding: 20px 0;
+      background-color: #181818;
+      top: calc(0% + 86px);
+      left: 0%;
       z-index: 3;
     }
     .content .links li{
@@ -256,12 +272,14 @@
     }
     .content .links li a,
     .content .links li label{
-      text-align: right;
-      line-height: 40px;
-      font-size: 16px;
-      display: block;
-      padding: 8px 18px;
-      cursor: pointer;
+        color: #b2b2b2 !important;
+        text-align: left;
+        font-size: 16px;
+        display: block;
+        line-height: 1.6em;
+        font-weight: 300;
+        padding: 0;
+        cursor: pointer;
     }
     .content .links li label{
       display: flex;
@@ -332,5 +350,42 @@
     .wrapper .search-box input{
       padding-right: 30px;
     }
+  }
+
+  .menu-icons {
+    width: 20px;
+    height: 14px;
+    cursor: pointer;
+    position: relative;
+  }
+  .menu-icons span {
+    background-color: white;
+    height: 2px;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    transition: all 0.3s ease;
+  }
+  .menu-icons span:first-child {
+    top: 0;
+  }
+  .menu-icons span:nth-child(2) {
+    top: 6px;
+  }
+  .menu-icons span:last-child {
+    top: 12px;
+  }
+  .menu-icons:hover span:nth-child(2) {
+    opacity: 0;
+  }
+  .menu-icons .active {
+    top: 6px;
+    background-color: red;
+  }
+  .menu-icons:hover span:first-child {
+    transform: rotate(45deg);
+  }
+  .menu-icons:hover span:last-child {
+    transform: rotate(-45deg);
   }
 

@@ -17,3 +17,8 @@ footer a , footer p {
 footer a:hover {
     color: var(--white);
 }
+@media (max-width:768px){
+    footer a, footer p{
+        font-size: 1.7rem;
+    }
+}
