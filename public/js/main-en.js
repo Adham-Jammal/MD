@@ -37,7 +37,7 @@ scrollTopButton.onclick = function () {
     });
 };
 
-$(".owl-carousel").owlCarousel({
+$(".slider").owlCarousel({
     items: 1,
     loop: true,
     rtl : false,
@@ -63,6 +63,31 @@ $(".owl-carousel").owlCarousel({
     },
   });
 
+  $(".image-slider").owlCarousel({
+    items: 1,
+    loop: true,
+    rtl : false,
+    autoplay: true,
+    autoplaySpeed: 1000,
+    autoplayTimeout: 6000,
+    dots: false,
+    smartSpeed: 1000,
+    lazyLoad: true,
+    nav: false,
+    responsive: {
+        0: {
+            items: 1,
+            nav: false,
+        },
+        600: {
+            items: 1,
+            nav: false,
+        },
+        1000: {
+            items: 1,
+        },
+    },
+  });
 //   text animation
 const hero = document.querySelector('.hero');
 const text = hero.querySelectorAll('h2');

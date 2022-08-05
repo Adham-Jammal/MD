@@ -133,6 +133,7 @@
    .about .column{
     display: flex;
     justify-content: center;
+    margin-bottom: 50px;
    }
    .about .column h4{
     margin-bottom: 15px;
@@ -205,10 +206,13 @@
     font-weight: 400;
     color: rgb(178, 178, 178);
 }
-.works img {
+.owl-carousel .owl-item img{
+    display: block;
+    max-width: 800px;
     width: 100%;
-    margin: 30px 0;
+    margin: 0 auto;
 }
+
 /* ADVANTAGES */
 .advantages{
     position: relative;
