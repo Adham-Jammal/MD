@@ -9,6 +9,7 @@ footer .footer-container{
 }
 footer a , footer p {
     display: block;
+    text-align: center;
     font-size: 1.3rem;
     font-weight: 300;
     color: rgb(178, 178, 178);
@@ -20,5 +21,6 @@ footer a:hover {
 @media (max-width:768px){
     footer a, footer p{
         font-size: 1.7rem;
+        text-align: left;
     }
 }

@@ -20,12 +20,13 @@
     .hero .content{
         position: relative;
         width: 50%;
+        min-width: 575px;
     }
     .hero .content h2{
         position: relative;
         text-align: center;
         font-family: 'Italiana';
-        font-size: 8.4rem;
+        font-size: 7.2rem;
         font-weight: 300;
         line-height: 75px;
         text-transform: uppercase;
@@ -51,18 +52,20 @@
         text-transform: none;
     }
     .hero .mobile-text{
+        width: 90%;
         font-size: 2rem;
         line-height: 20px;
         font-weight: 200;
-        text-align: left;
         text-transform: none;
+        margin: 20px auto 0;
+        text-align: left;
         display: none;
     }
     .hero #scroll{
         position: absolute;
         text-transform: uppercase;
-        right: 40px;
-        bottom: 25px;
+        right: 80px;
+        bottom: 80px;
         color: #fff;
         font-size: 1.4rem;
         font-weight: 300;
@@ -72,13 +75,13 @@
     }
     .hero .circle-svg{
         fill: none;
-        height: 95px;
+        height: 120px;
         stroke: red;
         stroke-width: 1.7;
-        width: 95px;
+        width: 120px;
         position: absolute;
-        right: -5px;
-        bottom: -5px;
+        right: 20px;
+        bottom: 40px;
         color: #fff;
         font-size: 1.4rem;
         font-weight: 300;
@@ -125,7 +128,7 @@
    }
    .about .about-title{
     font-family: 'Italiana', sans-serif;
-    font-size: 20rem;
+    font-size: 16rem;
     font-weight: 300;
     color: rgba(255, 255, 255, 0.1);
     text-transform: uppercase;
@@ -223,6 +226,12 @@
     font-size: 2.4rem;
     margin-bottom: 50px;
 }
+.advantages p{
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 25px;
+    margin-bottom: 15px;
+}
 .advantages .image-content img{
     width: 100%;
 }
@@ -277,6 +286,7 @@
     overflow: hidden;
 }
 .mission h2{
+    margin-bottom: 25px;
     text-transform: uppercase;
     text-align: center;
     font-size: 1.5rem;
@@ -293,13 +303,16 @@
     font-size: 2.6rem;
     font-weight: 400;
     line-height: 30px;
-    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    text-align: justify;
+    text-align-last: center;
 }
 .mission span{
     font-family: 'Italiana', sans-serif;
     position: absolute;
-    top: -30%;
-    left: 13%;
+    top: -50%;
+    left: 8%;
     font-size: 85rem;
     font-weight: 300;
     color: rgba(255, 255, 255, 0.1);
@@ -345,13 +358,14 @@
         flex-direction: column;
     }
     .hero .content{
-        width: 100%;
+        min-width: 100%;
     }
     .hero .content h2 span{
         display: none;
     }
     .hero .content h2{
-        font-size: 6.5rem;
+        font-size: 5rem;
+        line-height: inherit;
     }
     .hero .content h2.with-text{
         display: block;
@@ -362,11 +376,24 @@
     .hero .line-svg{
         width: 100%;
     }
+    .hero #scroll{
+        right: 30px;
+        bottom: 30px;
+    }
+    .hero .circle-svg{
+        width: 95px;
+        height: 95px;
+        right: -12px;
+        bottom: 5px;
+    }
     .about{
         padding: 75px 25px;
     }
     .about .about-title{
         font-size: 10rem;
+    }
+    .mission .slider .slide p{
+        width: 100%;
     }
     .gallery .images img{
         width: 100%;
@@ -383,6 +410,6 @@
 /* Scroll Top */
 #scroll_top{
     transform: rotate(-90deg);
-    right: 0;
+    right: 10px;
     bottom: -60px;
 }

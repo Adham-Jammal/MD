@@ -16,7 +16,7 @@
     z-index: 2;
     display: flex;
     margin: 0 auto;
-    padding: 5px 20px;
+    padding: 5px 40px;
     padding-top: 5px;
     padding-bottom: 5px;
     align-items: center;
@@ -98,6 +98,7 @@
   }
   .content .links li a,
   .content .links li label{
+    text-transform: uppercase;
     position: relative;
     color: #fff !important;
     font-size: 1.4rem;

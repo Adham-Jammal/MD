@@ -25,7 +25,7 @@ window.addEventListener("load", () => {
 let scrollTopButton = document.getElementById("scroll_top");
 window.onscroll = () => {
     if (scrollY >= 430) {
-        scrollTopButton.style = "bottom: 10px;";
+        scrollTopButton.style = "bottom: 30px;";
     } else {
         scrollTopButton.style = "bottom: -60px;";
     }
