@@ -1,26 +1,361 @@
+
+@import url('http://fonts.cdnfonts.com/css/prompt');
+@import url('http://fonts.cdnfonts.com/css/italiana');
+@import url('http://fonts.cdnfonts.com/css/roboto');
 @import url('http://fonts.cdnfonts.com/css/cairo');
 @font-face {
-   font-family: Roboto ;
-   src: url("/fonts/Roboto-Black.ttf");
-   src: url("/fonts/Roboto-BlackItalic.ttf");
-   src: url("/fonts/Roboto-Bold.ttf");
-   src: url("/fonts/Roboto-BoldCondensed.ttf");
-   src: url("/fonts/Roboto-BoldCondensedItalic.ttf");
-   src: url("/fonts/Roboto-BoldItalic.ttf");
-   src: url("/fonts/Roboto-Condensed.ttf");
-   src: url("/fonts/Roboto-CondensedItalic.ttf");
-   src: url("/fonts/Roboto-Italic.ttf");
-   src: url("/fonts/Roboto-Light.ttf");
-   src: url("/fonts/Roboto-LightItalic.ttf");
-   src: url("/fonts/Roboto-Medium.ttf");
-   src: url("/fonts/Roboto-Regular.ttf");
-   src: url("/fonts/Roboto-Thin.ttf");
- }
+    font-family: arabic-font ;
+    src: url("/fonts/arabic-font.ttf");
+  }
 *{
     direction: rtl;
-    font-family: 'Cairo', sans-serif;
-   }
+    font-family: 'arabic-font';
+}
+    /* Hero */
+    .hero{
+        position: relative;
+        height: calc(100vh - 100px);
+        margin-top: 100px;
+    }
+    .hero .container{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .hero .content{
+        position: relative;
+        width: 50%;
+        min-width: 575px;
+    }
+    .hero .content h2{
+        position: relative;
+        text-align: center;
+        font-size: 7.2rem;
+        font-weight: 300;
+        line-height: 100px;
+        text-transform: uppercase;
+    }
+    .hero .content img{
+        width: 25px;
+        top: -15px;
+        position: absolute;
+        left: 25%;
+        }
+    .hero .content h2.with-text{
+        display: inline-flex;
+        justify-content: center;
+    }
+    .hero .content h2 span{
+        font-family: 'Cairo', sans-serif;
+        letter-spacing: 2px;
+        font-size: 1.8rem;
+        line-height: 25px;
+        font-weight: 200;
+        width: 32%;
+        margin-right: 15px;
+        display: flex;
+        text-align: right;
+        text-transform: none;
+        align-items: center;
+    }
+    .hero .mobile-text{
+        width: 90%;
+        font-size: 2rem;
+        line-height: 20px;
+        font-weight: 200;
+        text-transform: none;
+        margin: 20px auto 0;
+        text-align: right;
+        display: none;
+    }
+    .hero #scroll{
+        position: absolute;
+        text-transform: uppercase;
+        left: 100px;
+        bottom: 80px;
+        color: #fff;
+        font-size: 1.4rem;
+        font-weight: 300;
+        width: 25px;
+        height: 25px;
 
+    }
+    .hero .circle-svg{
+        fill: none;
+        height: 120px;
+        stroke: red;
+        stroke-width: 1.7;
+        width: 120px;
+        position: absolute;
+        left: 45px;
+        bottom: 35px;
+        color: #fff;
+        font-size: 1.4rem;
+        font-weight: 300;
+        z-index: -1;
+        animation: spin 4s linear infinite;
+    }
+    .hero .line-svg{
+        position: absolute;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        top: 75px;
+        z-index: -1;
+    }
+    .path-1 {
+        stroke-dasharray: 1739.9976806640625        ;
+        stroke-dashoffset: 1739.9976806640625        ;
+        animation: dash 1s linear forwards;
+        animation-delay: 1s;
+        fill: none;
+        stroke: #ff0000;
+
+      }
+      .path-2 {
+        stroke-dasharray: 1739.9976806640625        ;
+        stroke-dashoffset: 1739.9976806640625        ;
+        animation: dash 1s linear forwards;
+        animation-delay: 2s;
+        fill: none;
+        stroke: #ff0000;
+
+
+      }
+
+      @keyframes dash {
+        to {
+          stroke-dashoffset: 0;
+        }
+      }
+   /* About */
+   .about{
+    position: relative;
+    padding: 75px 0;
+   }
+   .about .about-title{
+    letter-spacing: 5px;
+    font-size: 16rem;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.1);
+    text-transform: uppercase;
+   }
+   .about .column{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+   }
+   .about .column h4{
+    margin-bottom: 15px;
+    font-size: 2rem;
+    color: rgb(178, 178, 178);
+    font-weight: 600;
+   }
+   .about .column p{
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 25px;
+    margin-bottom: 15px;
+   }
+   .about .column ul{
+    list-style: none;
+   }
+   .about .column ul li{
+    font-size: 1.5rem;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+}
+.about .column ul li i{
+    transform: rotate(180deg);
+    margin-left: 5px;
+}
+/* Works */
+.works{
+    padding: 75px 0;
+    position: relative;
+}
+.works h2{
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 2rem;
+}
+.works .col-md-6{
+    display: flex;
+    justify-content: center;
+}
+.works .content a{
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--white);
+}
+.works .content a:hover .arrow{
+    transform: translateX(-5px) rotate(180deg);
+}
+.works .content a .arrow{
+    position: relative;
+    margin-right: 10px;
+    font-size: 45px;
+    transform: rotate(180deg);
+}
+.works .content a .arrow svg{
+    fill: none;
+    height: 75px;
+    stroke: red;
+    stroke-width: 1.7;
+    width: 75px;
+    position: absolute;
+    right: -25px;
+    bottom: -5px;
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 300;
+    z-index: -1;
+}
+.works .content p{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: rgb(178, 178, 178);
+}
+.owl-carousel .owl-item img{
+    display: block;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* ADVANTAGES */
+.advantages{
+    padding: 75px 0;
+    position: relative;
+}
+.advantages h2{
+    text-align: center;
+    font-weight: 300;
+    font-size: 2.4rem;
+    margin-bottom: 50px;
+}
+.advantages p{
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 35px;
+    margin-bottom: 15px;
+}
+.advantages .image-content img{
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+}
+.advantages .text-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.advantages .text-content ul{
+    list-style-position: inside;
+}
+.advantages .text-content li{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 28px;
+    color: rgb(178, 178, 178);
+}
+.advantages .text-content a{
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--white);
+}
+.advantages .text-content a .arrow{
+    position: relative;
+    margin-left: 10px;
+    font-size: 45px;
+}
+.advantages .text-content a .arrow svg{
+    fill: none;
+    height: 75px;
+    stroke: red;
+    stroke-width: 1.7;
+    width: 75px;
+    position: absolute;
+    right: -25px;
+    bottom: -5px;
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 300;
+    z-index: -1;
+}
+.advantages .text-content a:hover .arrow{
+    transform: translateX(5px);
+}
+/* Mission */
+.mission{
+    padding: 75px 0;
+    position: relative;
+    overflow: hidden;
+}
+.mission h2{
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: rgb(178, 178, 178)
+}
+.mission .slider .slide {
+    padding: 40px 0;
+    width: 80%;
+    margin: 0 auto;
+}
+.mission .slider .slide p{
+    font-size: 2.6rem;
+    font-weight: 400;
+    line-height: 40px;
+    width: 80%;
+    margin: 0 auto;
+    text-align: justify;
+    text-align-last: center;
+}
+.mission span{
+    font-family: 'Italiana', sans-serif;
+    position: absolute;
+    top: -50%;
+    right: 8%;
+    font-size: 85rem;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.1);
+
+}
+/* gallery */
+.gallery{
+    position: relative;
+
+}
+.gallery .images{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.gallery .images img{
+    width: 15%;
+    margin: 0.8%;
+}
+.gallery .single-image{
+    display: flex;
+    justify-content: center;
+    margin-top: 75px;
+    margin-bottom: 20px;
+}
+.gallery .single-image img{
+    width: 40%;
+}
 /* Responsive */
 @media (min-width:1200px){
 
@@ -34,7 +369,67 @@
 }
 /* ************* */
 @media (max-width:768px){
-    
+    .hero{
+        margin-top: 0;
+    }
+    .hero .container{
+        flex-direction: column;
+    }
+    .hero .content{
+        min-width: 100%;
+    }
+    .hero .content h2 span{
+        display: none;
+    }
+    .hero .content h2{
+        font-size: 5rem;
+        line-height: inherit;
+    }
+    .hero .content h2.with-text{
+        display: block;
+    }
+    .hero .mobile-text{
+        display: block;
+    }
+    .hero .line-svg{
+        width: 100%;
+    }
+    .hero #scroll{
+        left: 30px;
+        bottom: 30px;
+    }
+    .hero .circle-svg{
+        width: 95px;
+        height: 95px;
+        left: -12px;
+        bottom: 0;
+    }
+    .about{
+        padding: 75px 25px;
+    }
+    .about .about-title{
+        font-size: 10rem;
+    }
+    .owl-carousel .owl-item img{
+        width: 80%;
+    }
+    .mission span{
+        display: none;
+    }
+    .mission .slider .slide p{
+        text-align: center;
+        width: 100%;
+    }
+    .gallery .images img{
+        width: 100%;
+        margin: 01% auto;
+    }
+    .gallery .single-image img{
+        width: 100%;
+    }
+    .advantages p{
+        text-align: center;
+    }
 }
 /* ************* */
 @media (max-width:500px){
@@ -43,5 +438,12 @@
 /* Scroll Top */
 #scroll_top{
     transform: rotate(-90deg);
-    left: -60px;
+    right: 10px;
+    bottom: -60px;
+}
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform:rotate(360deg);
+    }
 }

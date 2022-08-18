@@ -9,9 +9,9 @@ if (preloader) {
 
 window.addEventListener("load", () => {
     x = document.querySelectorAll('.links a')
-    for( let i = 1 ; i < x.length  ; i++){
+    for( let i = 0 ; i < x.length  ; i++){
         x[i].addEventListener('click' , () => {
-            document.querySelector('.burger').click()
+            document.querySelector('.menu-icons').click()
         })
     }
     AOS.init({

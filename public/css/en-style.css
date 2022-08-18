@@ -2,6 +2,10 @@
 @import url('http://fonts.cdnfonts.com/css/prompt');
 @import url('http://fonts.cdnfonts.com/css/italiana');
 @import url('http://fonts.cdnfonts.com/css/roboto');
+@font-face {
+    font-family: arabic-font ;
+    src: url("/fonts/arabic-font.ttf");
+  }
 *{
     font-family: 'Prompt', sans-serif;
 }
@@ -64,7 +68,7 @@
     .hero #scroll{
         position: absolute;
         text-transform: uppercase;
-        right: 80px;
+        right: 100px;
         bottom: 80px;
         color: #fff;
         font-size: 1.4rem;
@@ -80,12 +84,13 @@
         stroke-width: 1.7;
         width: 120px;
         position: absolute;
-        right: 20px;
+        right: 40px;
         bottom: 40px;
         color: #fff;
         font-size: 1.4rem;
         font-weight: 300;
         z-index: -1;
+        animation:spin 4s linear infinite;
     }
     .hero .line-svg{
         position: absolute;
@@ -101,6 +106,7 @@
         stroke-dasharray: 1739.9976806640625        ;
         stroke-dashoffset: 1739.9976806640625        ;
         animation: dash 1s linear forwards;
+        animation-delay: 1s;
         fill: none;
         stroke: #ff0000;
 
@@ -109,7 +115,7 @@
         stroke-dasharray: 1739.9976806640625        ;
         stroke-dashoffset: 1739.9976806640625        ;
         animation: dash 1s linear forwards;
-        animation-delay: 1s;
+        animation-delay: 2s;
         fill: none;
         stroke: #ff0000;
 
@@ -157,12 +163,15 @@
     font-family: 'Roboto', sans-serif;
     font-size: 1.5rem;
     line-height: 25px;
+    display: flex;
+    align-items: center;
 }
 .about .column ul li i{
     margin-right: 5px;
 }
 /* Works */
 .works{
+    padding: 75px 0;
     position: relative;
 }
 .works h2{
@@ -218,6 +227,7 @@
 
 /* ADVANTAGES */
 .advantages{
+    padding: 75px 0;
     position: relative;
 }
 .advantages h2{
@@ -233,7 +243,9 @@
     margin-bottom: 15px;
 }
 .advantages .image-content img{
-    width: 100%;
+    display: block;
+    margin: 0 auto;
+    width: 80%;
 }
 .advantages .text-content{
     display: flex;
@@ -354,6 +366,9 @@
 }
 /* ************* */
 @media (max-width:768px){
+    .hero{
+        margin-top: 0;
+    }
     .hero .container{
         flex-direction: column;
     }
@@ -384,7 +399,7 @@
         width: 95px;
         height: 95px;
         right: -12px;
-        bottom: 5px;
+        bottom: 0;
     }
     .about{
         padding: 75px 25px;
@@ -392,7 +407,14 @@
     .about .about-title{
         font-size: 10rem;
     }
+    .owl-carousel .owl-item img{
+        width: 80%;
+    }
+    .mission span{
+        display: none;
+    }
     .mission .slider .slide p{
+        text-align: center;
         width: 100%;
     }
     .gallery .images img{
@@ -401,6 +423,9 @@
     }
     .gallery .single-image img{
         width: 100%;
+    }
+    .advantages p{
+        text-align: center;
     }
 }
 /* ************* */
@@ -412,4 +437,10 @@
     transform: rotate(-90deg);
     right: 10px;
     bottom: -60px;
+}
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform:rotate(360deg);
+    }
 }

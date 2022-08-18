@@ -1,81 +1,26 @@
-footer {
-    padding: 20px 0 50px;
- }
- @media (min-width:768px){
-
-   footer .col-md-4{
-    display: flex;
-    align-items: flex-start;
- }
- footer .logo{
-    justify-content: center;
-    align-items: center;
+footer{
+    position: relative;
 }
- }
-
-    footer > .row > .col-md-4:nth-of-type(2) {
-      position: relative; }
-      footer > .row > .col-md-4:nth-of-type(2)::after {
-        content: "";
-        display: block;
-        height: 100%;
-        width: 1px;
-        left: 60px;
-        background-color: var(--main-color);
-        position: absolute;
-     }
-    footer img {
-      width: 170px; }
-    footer h4 {
-      font-size: 2rem;
-      font-weight: 700;
-      color: black; }
-      footer .social-media{
-        display: flex;
-        align-items: center;
-        margin-top: 15px;
-      }
-      footer .social-media i{
-        color: black;
-        font-size: 20px;
-        margin-left: 25px;
-      }
-      footer .social-media a:hover i{
-        color: var(--main-color);
-        transform: scale(1.1);
-      }
-    footer ul {
-      padding: 0;
-      list-style: none;
+footer .footer-container{
+    padding: 40px 0;
+    border-top: 1px solid rgb(178, 178, 178);
+    width: 90%;
+    margin: 0 auto;
+}
+footer a , footer p {
+    display: block;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: rgb(178, 178, 178);
+    line-height: 25px;
+}
+footer a:hover {
+    color: var(--white);
+}
+@media (max-width:768px){
+    footer a, footer p{
+        font-size: 1.7rem;
+        text-align: right;
     }
-      footer ul li {
-        font-size: 1.5rem;
-        font-weight: 500;
-        color: black ;
-        display: flex;
-        align-items: baseline;
-    }
-    footer ul li p{
-        opacity: .5;
-    }
-        footer ul li img{
-            margin-left: 5px;
-            width: 12px;
-        }
-        @media (max-width:768px){
-            footer > .row > .col-md-4:nth-of-type(2)::after{
-                content: "";
-                display: block;
-                height: 2px;
-                width: 35%;
-                position: absolute;
-                inset-inline-start: 15px;
-                inset-block-start: 185px;
-            }
-            footer img{
-                width: 200px;
-            }
-            footer h4{
-                margin-top: 30px;
-            }
-        }
+}

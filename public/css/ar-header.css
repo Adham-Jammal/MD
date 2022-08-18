@@ -1,24 +1,22 @@
 .wrapper{
+    position: fixed;
     font-family:"Noto Kufi Arabic";
     top: 0;
-    background: transparent;
+    background: black;
     width: 100%;
     z-index: 11;
     margin: 0;
     transition: all 0.3s ease 0s;
   }
   .header-fix {
-    background: transparent !important;
+    background: black !important;
     z-index: 9;
   }
   .wrapper nav{
-    position: fixed;
-    z-index: 2;
-    display: flex;
-    margin: 0 auto;
-    padding: 5px 20px;
     padding-top: 5px;
     padding-bottom: 5px;
+    z-index: 2;
+    display: flex;
     align-items: center;
     justify-content: space-between;
   }
@@ -50,7 +48,7 @@
       align-items: center;
   }
   .content .logo a img{
-      width: 120px;
+      width: 75px;
   }
   .header-fix .content .logo a{
     color: var(--main-color) !important;
@@ -73,7 +71,7 @@
     height: 6px;
     opacity: 0;
     position: absolute;
-    right: -6px;
+    left: -6px;
     top: 2px;
     transition: opacity .2s ease-out;
     width: 6px;
@@ -81,14 +79,8 @@
   .content .links li a:hover::after{
     opacity: 1;
   }
-  li#lang{
-    border: 1px solid var(--main-color);
-    width: 50px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 8px;
+  li a#lang{
+    color: red !important;
   }
   li#lang a{
     opacity: 1;
@@ -98,6 +90,7 @@
   }
   .content .links li a,
   .content .links li label{
+    text-transform: uppercase;
     position: relative;
     color: #fff !important;
     font-size: 1.4rem;
@@ -215,7 +208,8 @@
 
   @media screen and (max-width: 1020px){
     .wrapper{
-      background: transparent ;
+      background: black ;
+      position: relative;
     }
 
     .content .logo{
@@ -223,19 +217,16 @@
     }
     .wrapper .menu-icon{
         display: flex;
-        padding: 0 10px;
+        padding: 10px;
         width: 100%;
         align-items: center;
         justify-content: space-between;
         }
         .wrapper .menu-icon img{
-            width: 100px;
+            width: 70px;
             position: relative;
-            top: 10px;
           }
-          .wrapper .menu-icon .mobile-logo{
-            top: 20px;
-          }
+
         .wrapper .menu-icon .burger{
             width: 25px;
             transform: scaleX(-1);
@@ -274,7 +265,7 @@
     .content .links li a,
     .content .links li label{
         color: #b2b2b2 !important;
-        text-align: left;
+        text-align: right;
         font-size: 16px;
         display: block;
         line-height: 1.6em;
@@ -323,7 +314,7 @@
     }
   }
   .content .login{
-    background: transparent;
+    background: black;
     border: 1px solid #11325b;
     color: #11325b;
     text-align: center;
