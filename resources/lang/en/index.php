@@ -40,6 +40,6 @@ return [
     "37" => "PRIVACY POLICY ",
     "38" => "TERMS & CONDITIONS ",
     "39" => "العربية",
-    "" => "",
+    "40" => "Our Partners",
 
 ];

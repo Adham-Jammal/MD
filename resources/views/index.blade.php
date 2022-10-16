@@ -8,7 +8,7 @@
         <div class="container">
             <div class="content">
                 <h2 data-aos="fade-up" data-aos-duration="500">{{ __('index.1') }} <img src="{{ asset('img/red-circle.png') }}" class="red-circle" alt=""></h2>
-                <h2 data-aos="fade-up" data-aos-duration="500" data-aos-delay="200" class="with-text">{{ __('index.2') }}<span> {{ __('index.3') }} </span></h2>
+                <h2 data-aos="fade-up" data-aos-duration="500" data-aos-delay="200" class="with-text">{{ __('index.2') }}{{--<span> {{ __('index.3') }} </span>--}}</h2>
                 <h2 data-aos="fade-up" data-aos-duration="500" data-aos-delay="400">{{ __('index.4') }} </h2>
                 <h2 data-aos="fade-up" data-aos-duration="500" data-aos-delay="600">{{ __('index.5') }} </h2>
             </div>
@@ -137,7 +137,7 @@
             <h2 data-aos="zoom-in" data-aos-duration="1000">{{ __('index.20') }} </h2>
             <div class="row">
                 <div class="col-md-6 image-content" data-aos="fade-right" data-aos-duration="1000">
-                    <img src="{{ asset('img/advantages.png') }}" alt="advantages-image">
+                    <img src="{{ asset('img/advantages.jpeg') }}" alt="advantages-image">
                 </div>
                 <div class="col-md-6 text-content" data-aos="fade-left" data-aos-duration="1000">
                     <p>{{ __('index.21') }}
@@ -179,16 +179,29 @@
                 </div>
             </div>
             <div class="image-slider owl-carousel owl-drag owl-theme">
-                <img src="{{ asset('img/works-image-1.jpg') }}" alt="works-image">
-                <img src="{{ asset('img/works-image-2.jpg') }}" alt="works-image">
-                <img src="{{ asset('img/works-image-3.png') }}" alt="works-image">
-                <img src="{{ asset('img/works-image-4.png') }}" alt="works-image">
-                <img src="{{ asset('img/works-image-5.png') }}" alt="works-image">
+                <img src="{{ asset('img/gallery-image-2.jpeg') }}" alt="galeery-image">
+                <img src="{{ asset('img/gallery-image-3.jpeg') }}" alt="galeery-image">
+                <img src="{{ asset('img/gallery-image-4.jpeg') }}" alt="galeery-image">
+                <img src="{{ asset('img/gallery-image-6.jpeg') }}" alt="galeery-image">
+                <img src="{{ asset('img/gallery-image-7.jpeg') }}" alt="galeery-image">
+                <img src="{{ asset('img/gallery-image-8.jpeg') }}" alt="galeery-image">
+                <img src="{{ asset('img/gallery-image-9.jpeg') }}" alt="galeery-image">
+                <img src="{{ asset('img/gallery-image-10.jpeg') }}" alt="galeery-image">
+                <img src="{{ asset('img/gallery-image-11.jpeg') }}" alt="galeery-image">
+                <img src="{{ asset('img/gallery-image-12.jpeg') }}" alt="galeery-image">
+                <img src="{{ asset('img/gallery-image-13.jpeg') }}" alt="galeery-image">
+                <img src="{{ asset('img/gallery-image-14.jpeg') }}" alt="galeery-image">
+                <img src="{{ asset('img/gallery-image-15.jpeg') }}" alt="galeery-image">
+                <img src="{{ asset('img/gallery-image-16.jpeg') }}" alt="galeery-image">
+                <img src="{{ asset('img/gallery-image-17.jpeg') }}" alt="galeery-image">
+                <img src="{{ asset('img/gallery-image-18.jpeg') }}" alt="galeery-image">
+
+
             </div>
 
         </div>
     </section>
-    
+
     {{-- Old Slider Section --}}
     {{-- <section id="partners" class="mission" data-aos="zoom-in" data-aos-duration="1000">
         <div class="container">
@@ -214,30 +227,19 @@
         <span>”</span>
     </section> --}}
 
-    <section class="gallery">
+    <section class="gallery" id="partners">
         <div class="container">
+            <h2>{{ __('index.40') }}</h2>
             <div class="images" data-aos="fade-up" data-aos-duration="1000">
-                <img src="{{ asset('img/gallery-image-1.jpeg') }}" alt="galeery-image">
-                <img src="{{ asset('img/gallery-image-2.jpeg') }}" alt="galeery-image">
-                <img src="{{ asset('img/gallery-image-3.jpeg') }}" alt="galeery-image">
-                <img src="{{ asset('img/gallery-image-4.jpeg') }}" alt="galeery-image">
-                <img src="{{ asset('img/gallery-image-5.jpeg') }}" alt="galeery-image">
-                <img src="{{ asset('img/gallery-image-6.jpeg') }}" alt="galeery-image">
-                <img src="{{ asset('img/gallery-image-7.jpeg') }}" alt="galeery-image">
-                <img src="{{ asset('img/gallery-image-8.jpeg') }}" alt="galeery-image">
-                <img src="{{ asset('img/gallery-image-9.jpeg') }}" alt="galeery-image">
-                <img src="{{ asset('img/gallery-image-10.jpeg') }}" alt="galeery-image">
-                <img src="{{ asset('img/gallery-image-11.jpeg') }}" alt="galeery-image">
-                <img src="{{ asset('img/gallery-image-12.jpeg') }}" alt="galeery-image">
-                <img src="{{ asset('img/gallery-image-13.jpeg') }}" alt="galeery-image">
-                <img src="{{ asset('img/gallery-image-14.jpeg') }}" alt="galeery-image">
-                <img src="{{ asset('img/gallery-image-15.jpeg') }}" alt="galeery-image">
-                <img src="{{ asset('img/gallery-image-16.jpeg') }}" alt="galeery-image">
-                <img src="{{ asset('img/gallery-image-17.jpeg') }}" alt="galeery-image">
-                <img src="{{ asset('img/gallery-image-18.jpeg') }}" alt="galeery-image">
-
+                <img src="{{ asset('img/success-image-1.png') }}" alt="partner-image">
+                <img src="{{ asset('img/success.png') }}" alt="partner-image">
+                <img src="{{ asset('img/success-2.png') }}" alt="partner-image">
+                <img src="{{ asset('img/success-3.png') }}" alt="partner-image">
+                <img src="{{ asset('img/success-4.png') }}" alt="partner-image">
+                <img src="{{ asset('img/success-6.png') }}" alt="partner-image">
+                <img src="{{ asset('img/success-7.png') }}" alt="partner-image">
+                <img src="{{ asset('img/success-9.png') }}" alt="partner-image">
             </div>
-
         </div>
     </section>
 @stop
