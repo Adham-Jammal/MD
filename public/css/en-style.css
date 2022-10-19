@@ -1,8 +1,7 @@
 
-/* @import url('http://fonts.cdnfonts.com/css/prompt');
-@import url('http://fonts.cdnfonts.com/css/italiana');
-@import url('http://fonts.cdnfonts.com/css/roboto'); */
-
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,400;0,500;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 *{
     font-family: 'Prompt', sans-serif;
 }
@@ -110,12 +109,12 @@
     }
     .hero .line-svg{
         position: absolute;
-        width: 50%;
+        width: 25%;
         margin-left: auto;
         margin-right: auto;
         left: 0;
-        right: 0;
-        top: 75px;
+        right: 250px;
+        top: 40px !important;
         z-index: 2;
     }
     .path-1 {
@@ -191,21 +190,31 @@
     position: relative;
 }
 .works h2{
-    margin-bottom: 15px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 600;
-    font-size: 2rem;
+    text-align: center;
+    font-weight: 300;
+    font-size: 2.4rem;
+    margin-bottom: 50px;
 }
 .works .col-md-6{
     display: flex;
+    flex-wrap: wrap;
+    align-content: center;
     justify-content: center;
 }
 .works .content a{
     display: flex;
     align-items: center;
-    font-size: 1.4rem;
+    font-size: 2rem;
     font-weight: 400;
     color: var(--white);
+    border: 1px solid #454545;
+    width: 150px;
+    justify-content: space-evenly;
+    padding: 8px;
+    border-radius: 5px;
+}
+.works .content a:hover{
+    border-color: #fff;
 }
 .works .content a:hover .arrow{
     transform: translateX(5px);
@@ -229,17 +238,31 @@
     font-weight: 300;
     z-index: -1;
 }
-.works .content p{
+.works .slide{
+    width: 75%;
+    margin:  0 auto;
+    border: 1px solid #454545;
+    border-radius: 8px;
+}
+.works .slide .text-content p {
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 25px;
+    margin-bottom: 15px;
+}
+/* .works .content p{
     font-size: 1.5rem;
     font-weight: 400;
     color: rgb(178, 178, 178);
-}
-.owl-carousel .owl-item img{
+} */
+.works .owl-carousel .owl-item img{
     display: block;
     max-width: 800px;
     max-height: 350px;
-    width: 50%;
+    width: 100%;
     margin: 0 auto;
+    padding: 25px;
+    border-radius: 30px;
 }
 
 /* ADVANTAGES */
@@ -387,9 +410,12 @@
     justify-content: space-between;
     align-items: center;
 }
-.gallery .images img{
+/* .gallery .images img{
     width: 12%;
 }
+.gallery .images .big-image{
+    width: 7%;
+} */
 .gallery .single-image{
     display: flex;
     justify-content: center;
@@ -398,6 +424,73 @@
 }
 .gallery .single-image img{
     width: 40%;
+}
+.gallery .owl-stage{
+    display: flex;
+    align-items: center;
+}
+.gallery .owl-carousel .owl-item img{
+    width: 70%;
+}
+.gallery .owl-carousel .owl-item .big-image{
+    width: 50%;
+}
+/* Contact */
+/* Contact */
+.contact-form{
+    padding: 75px 0;
+}
+.contact-form h2{
+    font-weight: 900;
+    font-size: 3.2rem;
+}
+
+.contact-form p{
+    font-size: 1.5rem;
+    opacity: .5;
+}
+.contact-form .map{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-form .map iframe{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+.contact-form form{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.contact-form form input, .contact-form form select{
+    border-bottom: 1px solid #fff;
+    padding: 10px;
+    width: 49%;
+    font-size: 1.4rem;
+    color: #fff;
+    margin: 15px 0;
+    background: transparent;
+}
+.contact-form form option{
+    background-color: #080808;
+}
+.contact-form form input[type='submit']{
+    width: 100%;
+    margin: 15px auto;
+    border: 1px solid #454545;
+    cursor: pointer;
+    background: transparent;
+    color: var(--white);
+    border-radius: 4px;
+    padding: 8px 40px;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+.contact-form form input[type='submit']:hover{
+    border-color: #fff;
 }
 /* Responsive */
 @media (min-width:1200px){
@@ -437,8 +530,9 @@
         display: block;
     }
     .hero .line-svg{
-        width: 100%;
-    }
+        width: 65%;
+        top: -12px !important;
+        }
     .hero #scroll{
         right: 30px;
         bottom: 30px;
@@ -477,6 +571,24 @@
     }
     .advantages p{
         text-align: center;
+        margin-top: 50px;
+    }
+    .works .slide{
+        width: 90%;
+        padding-bottom: 25px;
+    }
+    .works .slide .row{
+        flex-direction: column-reverse;
+    }
+    .works .slide .text-content p{
+        text-align: center;
+    }
+    .works .content a{
+        margin: 0 auto;
+    }
+    .contact-form .row{
+        display: flex;
+        flex-direction: column-reverse;
     }
 }
 /* ************* */
@@ -484,6 +596,12 @@
     .cards-section .cards .card{
         width: 100%;
     }
+}
+@media (max-width:350px){
+    .hero .line-svg{
+        width: 100%;
+        top: -60px !important;
+        }
 }
 /* Scroll Top */
 #scroll_top{

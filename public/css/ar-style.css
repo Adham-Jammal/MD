@@ -441,8 +441,9 @@
         display: block;
     }
     .hero .line-svg{
-        width: 100%;
-    }
+        width: 65%;
+        top: -12px !important;
+        }
     .hero #scroll{
         left: 30px;
         bottom: 30px;

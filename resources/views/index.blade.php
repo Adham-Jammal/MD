@@ -7,7 +7,7 @@
     <section class="hero">
         <div class="container">
             <div class="content">
-                <h2 data-aos="fade-up" data-aos-duration="500">{{ __('index.1') }} <img src="{{ asset('img/red-circle.png') }}" class="red-circle" alt=""></h2>
+                <h2 data-aos="fade-up" data-aos-duration="500">{{ __('index.1') }} <img loading="lazy" src="{{ asset('img/red-circle.png') }}" class="red-circle" alt=""></h2>
                 <h2 data-aos="fade-up" data-aos-duration="500" data-aos-delay="200" class="with-text">{{ __('index.2') }}{{--<span> {{ __('index.3') }} </span>--}}</h2>
                 <h2 data-aos="fade-up" data-aos-duration="500" data-aos-delay="400">{{ __('index.4') }} </h2>
                 <h2 data-aos="fade-up" data-aos-duration="500" data-aos-delay="600">{{ __('index.5') }} </h2>
@@ -38,7 +38,7 @@
                 <div class="column col-md-6">
                     <div class="content" data-aos="zoom-in" data-aos-duration="500">
                         <h4>{{ __('index.9') }} </h4>
-                        <p>{{ __('index.10') }} </p>
+                        <p>{{ __('index.42') }} <br> {{ __('index.10') }} <br> {{ __('index.10.1') }} </p>
                     </div>
                 </div>
                 <div class="column col-md-6">
@@ -63,6 +63,7 @@
                             <li> <i class="fas fa-long-arrow-alt-right"></i> {{ __('index.15') }} </li>
                             <li> <i class="fas fa-long-arrow-alt-right"></i> {{ __('index.16') }} </li>
                             <li> <i class="fas fa-long-arrow-alt-right"></i> {{ __('index.17') }} </li>
+                            <li> <i class="fas fa-long-arrow-alt-right"></i> {{ __('index.43') }} </li>
                         </ul>
                     </div>
 
@@ -116,15 +117,33 @@
                 </div>
 
                 <div class="card">
-                    <h2>{{ __('index.26') }}</h2>
+                    <h2>{{ __('index.44') }}</h2>
                     <hr>
-                    <p>{{ __('index.27') }} </p>
+                    <p>{{ __('index.45') }} </p>
                 </div>
 
                 <div class="card">
                     <h2>{{ __('index.28') }}</h2>
                     <hr>
                     <p>{{ __('index.29') }} </p>
+                </div>
+
+                <div class="card">
+                    <h2>{{ __('index.26') }}</h2>
+                    <hr>
+                    <p>{{ __('index.27') }} </p>
+                </div>
+
+                <div class="card">
+                    <h2>{{ __('index.46') }}</h2>
+                    <hr>
+                    <p>{{ __('index.47') }} </p>
+                </div>
+
+                <div class="card">
+                    <h2>{{ __('index.48') }}</h2>
+                    <hr>
+                    <p>{{ __('index.49') }} </p>
                 </div>
 
             </div>
@@ -137,7 +156,7 @@
             <h2 data-aos="zoom-in" data-aos-duration="1000">{{ __('index.20') }} </h2>
             <div class="row">
                 <div class="col-md-6 image-content" data-aos="fade-right" data-aos-duration="1000">
-                    <img src="{{ asset('img/advantages.jpeg') }}" alt="advantages-image">
+                    <img loading="lazy" src="{{ asset('img/advantages.jpeg') }}" alt="advantages-image">
                 </div>
                 <div class="col-md-6 text-content" data-aos="fade-left" data-aos-duration="1000">
                     <p>{{ __('index.21') }}
@@ -161,40 +180,55 @@
     <section id="works" class="works" data-aos="fade-up" data-aos-duration="1000">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-12">
                     <div class="content">
                         <h2>{{ __('index.18') }} </h2>
-                        <a href="mailto:Hla@pulpstudio.co">hla@pulpstudio.co<span class="arrow"><svg class="circle-svg"
+                        {{-- <a href="mailto:Hla@pulpstudio.co">hla@pulpstudio.co<span class="arrow"><svg class="circle-svg"
                                     viewBox="0 0 100 100">
                                     <path
                                         d="M72.3 27.41 C 74.53166666666667 29.97 78.22 33.70666666666666 79.59 36.82 80.96000000000001 39.93333333333334 80.10833333333333 42.79666666666667 80.52 46.09 80.93166666666666 49.38333333333334 82.13666666666667 53.36 82.06 56.58 81.98333333333333 59.8 81.79 62.346666666666664 80.06 65.41 78.33 68.47333333333333 74.51833333333335 72.82333333333332 71.68 74.96 68.84166666666667 77.09666666666666 65.95 76.95666666666668 63.03 78.23 60.11 79.50333333333333 57.364999999999995 81.62166666666667 54.16 82.6 50.955 83.57833333333332 46.968333333333334 84.47333333333333 43.8 84.1 40.63166666666666 83.72666666666666 37.946666666666665 82.13666666666667 35.15 80.36 32.35333333333333 78.58333333333333 29.301666666666666 76.33666666666666 27.02 73.44 24.738333333333333 70.54333333333334 22.775000000000002 66.185 21.46 62.98 20.145 59.775 19.988333333333333 57.33 19.13 54.21 18.271666666666665 51.09 16.044999999999998 47.78333333333333 16.31 44.26 16.575 40.736666666666665 18.796666666666667 36.21333333333333 20.72 33.07 22.64333333333333 29.926666666666666 25.378333333333334 27.341666666666665 27.85 25.4 30.32166666666667 23.458333333333332 32.541666666666664 22.683333333333334 35.55 21.42 38.55833333333333 20.15666666666667 42.42 18.196666666666665 45.9 17.82 49.379999999999995 17.443333333333335 53.04666666666667 18.553333333333335 56.43 19.16 59.81333333333333 19.766666666666666 63.55500000000001 20.085 66.2 21.46 68.845 22.835 70.06833333333333 24.85 72.3 27.41z">
                                     </path>
-                                </svg>&#10230;</span></a>
+                                </svg>&#10230;</span></a> --}}
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="content">
-                        <p>{{ __('index.19') }} </p>
+                        {{-- <p>{{ __('index.19') }} </p> --}}
                     </div>
                 </div>
             </div>
             <div class="image-slider owl-carousel owl-drag owl-theme">
-                <img src="{{ asset('img/gallery-image-2.jpeg') }}" alt="galeery-image">
-                <img src="{{ asset('img/gallery-image-3.jpeg') }}" alt="galeery-image">
-                <img src="{{ asset('img/gallery-image-4.jpeg') }}" alt="galeery-image">
-                <img src="{{ asset('img/gallery-image-6.jpeg') }}" alt="galeery-image">
-                <img src="{{ asset('img/gallery-image-7.jpeg') }}" alt="galeery-image">
-                <img src="{{ asset('img/gallery-image-8.jpeg') }}" alt="galeery-image">
-                <img src="{{ asset('img/gallery-image-9.jpeg') }}" alt="galeery-image">
-                <img src="{{ asset('img/gallery-image-10.jpeg') }}" alt="galeery-image">
-                <img src="{{ asset('img/gallery-image-11.jpeg') }}" alt="galeery-image">
-                <img src="{{ asset('img/gallery-image-12.jpeg') }}" alt="galeery-image">
-                <img src="{{ asset('img/gallery-image-13.jpeg') }}" alt="galeery-image">
-                <img src="{{ asset('img/gallery-image-14.jpeg') }}" alt="galeery-image">
-                <img src="{{ asset('img/gallery-image-15.jpeg') }}" alt="galeery-image">
-                <img src="{{ asset('img/gallery-image-16.jpeg') }}" alt="galeery-image">
-                <img src="{{ asset('img/gallery-image-17.jpeg') }}" alt="galeery-image">
-                <img src="{{ asset('img/gallery-image-18.jpeg') }}" alt="galeery-image">
+                <div class="slide">
+                    <div class="row">
+                        <div class="col-md-6 text-content">
+                            <div class="content">
+                                <p><i class="bi bi-house-door"></i> Project Type : Housing </p>
+                                <p><i class="bi bi-arrows-fullscreen"></i> space : 200m<sup>2</sup></p>
+                                <hr>
+                                <a href="#">Download  <i class="bi bi-filetype-pdf"></i>   </a>
+                            </div>
+
+                        </div>
+                        <div class="col-md-6 image-content">
+                            <img loading="lazy" src="{{ asset('img/gallery-image-2.jpeg') }}" alt="galeery-image">
+                        </div>
+                    </div>
+                </div>
+                {{-- <img loading="lazy" src="{{ asset('img/gallery-image-3.jpeg') }}" alt="galeery-image">
+                <img loading="lazy" src="{{ asset('img/gallery-image-4.jpeg') }}" alt="galeery-image">
+                <img loading="lazy" src="{{ asset('img/gallery-image-6.jpeg') }}" alt="galeery-image">
+                <img loading="lazy" src="{{ asset('img/gallery-image-7.jpeg') }}" alt="galeery-image">
+                <img loading="lazy" src="{{ asset('img/gallery-image-8.jpeg') }}" alt="galeery-image">
+                <img loading="lazy" src="{{ asset('img/gallery-image-9.jpeg') }}" alt="galeery-image">
+                <img loading="lazy" src="{{ asset('img/gallery-image-10.jpeg') }}" alt="galeery-image">
+                <img loading="lazy" src="{{ asset('img/gallery-image-11.jpeg') }}" alt="galeery-image">
+                <img loading="lazy" src="{{ asset('img/gallery-image-12.jpeg') }}" alt="galeery-image">
+                <img loading="lazy" src="{{ asset('img/gallery-image-13.jpeg') }}" alt="galeery-image">
+                <img loading="lazy" src="{{ asset('img/gallery-image-14.jpeg') }}" alt="galeery-image">
+                <img loading="lazy" src="{{ asset('img/gallery-image-15.jpeg') }}" alt="galeery-image">
+                <img loading="lazy" src="{{ asset('img/gallery-image-16.jpeg') }}" alt="galeery-image">
+                <img loading="lazy" src="{{ asset('img/gallery-image-17.jpeg') }}" alt="galeery-image">
+                <img loading="lazy" src="{{ asset('img/gallery-image-18.jpeg') }}" alt="galeery-image"> --}}
 
 
             </div>
@@ -230,15 +264,43 @@
     <section class="gallery" id="partners">
         <div class="container">
             <h2>{{ __('index.40') }}</h2>
-            <div class="images" data-aos="fade-up" data-aos-duration="1000">
-                <img src="{{ asset('img/success-image-1.png') }}" alt="partner-image">
-                <img src="{{ asset('img/success.png') }}" alt="partner-image">
-                <img src="{{ asset('img/success-2.png') }}" alt="partner-image">
-                <img src="{{ asset('img/success-3.png') }}" alt="partner-image">
-                <img src="{{ asset('img/success-4.png') }}" alt="partner-image">
-                <img src="{{ asset('img/success-6.png') }}" alt="partner-image">
-                <img src="{{ asset('img/success-7.png') }}" alt="partner-image">
-                <img src="{{ asset('img/success-9.png') }}" alt="partner-image">
+            <div class="images partners-slider owl-carousel owl-drag owl-theme" data-aos="fade-up" data-aos-duration="1000">
+                <img loading="lazy" src="{{ asset('img/success-image-1.png') }}" alt="partner-image">
+                <img loading="lazy" src="{{ asset('img/success.png') }}" alt="partner-image" class="big-image">
+                <img loading="lazy" src="{{ asset('img/success-2.png') }}" alt="partner-image">
+                <img loading="lazy" src="{{ asset('img/success-3.png') }}" alt="partner-image">
+                <img loading="lazy" src="{{ asset('img/success-4.png') }}" alt="partner-image" class="big-image">
+                <img loading="lazy" src="{{ asset('img/success-6.png') }}" alt="partner-image">
+                {{-- <img loading="lazy" src="{{ asset('img/success-7.png') }}" alt="partner-image"> --}}
+                <img loading="lazy" src="{{ asset('img/awaits.png') }}" alt="partner-image">
+                <img loading="lazy" src="{{ asset('img/success-9.png') }}" alt="partner-image">
+            </div>
+        </div>
+    </section>
+       {{-- Contact --}}
+       <section class="contact-form" id="contact_us">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7 map"  data-aos="zoom-in" data-aos-duration="1000">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14500.067433669716!2d46.6826688!3d24.6919472!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9bb82f20e03be9e9!2sHamad%20Tower!5e0!3m2!1sen!2s!4v1665963428398!5m2!1sen!2s" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="col-md-5 form"  data-aos="zoom-out" data-aos-duration="1000">
+                    <h2>Contact us</h2>
+                    <p>We are here for you.You can always contact us by filling the contact form</p>
+                    <form action="#">
+                        <input type="text" name="name" id="name" placeholder="Full Name">
+                        <input type="email" name="email" id="email" placeholder="Email">
+                        <input type="number" name="space" id="space" placeholder="space">
+                        <select name="type" id="">
+                            <option value="residential">residential</option>
+                            <option value="commercial">commercial</option>
+                        </select>
+                        <input type="number" name="phone" id="number" placeholder="phone">
+                        <input type="text" name="Notes" id="Notes" placeholder="Notes">
+                        <input type="submit" name="submit" id="submit" value="Send">
+
+                    </form>
+                </div>
             </div>
         </div>
     </section>

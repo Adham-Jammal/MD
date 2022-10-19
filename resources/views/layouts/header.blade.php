@@ -19,11 +19,11 @@ $lang2 =  LaravelLocalization::getCurrentLocale() == 'ar' ? 'en' : 'ar';
         <div class="content">
         <ul class="links">
             <li> <a href="#about">{{ __('index.30') }} </a> </li>
-            <li> <a href="#works">{{ __('index.31') }} </a></li>
             <li> <a href="#advantages">{{ __('index.32') }} </a></li>
+            <li> <a href="#works">{{ __('index.31') }} </a></li>
             <li> <a href="#partners">{{ __('index.33') }} </a></li>
             <li> <a href="#contact">{{ __('index.34') }} </a></li>
-            <li> <a href="{{ LaravelLocalization::getLocalizedURL($lang2, null, [], true) }}" id="lang">{{ __('index.39') }}</a></li>
+            {{-- <li> <a href="{{ LaravelLocalization::getLocalizedURL($lang2, null, [], true) }}" id="lang">{{ __('index.39') }}</a></li> --}}
 
         </ul>
       </div>
