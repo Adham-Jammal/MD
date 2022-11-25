@@ -23,8 +23,8 @@ $lang2 =  LaravelLocalization::getCurrentLocale() == 'ar' ? 'en' : 'ar';
             <li> <a href="#works">{{ __('index.31') }} </a></li>
             <li> <a href="#partners">{{ __('index.33') }} </a></li>
             <li> <a href="#contact">{{ __('index.34') }} </a></li>
-            {{-- <li> <a href="{{ LaravelLocalization::getLocalizedURL($lang2, null, [], true) }}" id="lang">{{ __('index.39') }}</a></li> --}}
-
+            <li> <a href="{{ asset('PDFs/Profile.pdf') }}">{{ __('index.50') }} </a></li>
+            <li> <a href="{{ LaravelLocalization::getLocalizedURL($lang2, null, [], true) }}" id="lang">{{ __('index.39') }}</a></li>
         </ul>
       </div>
     </nav>

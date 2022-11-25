@@ -6,7 +6,7 @@
             </div>
             <div class="col-md-4">
                 <a href="mailto:Hla@mandar.co">Hla@mandar.sa</a>
-                <a href="tel:+966507151921">+966507151921</a>
+                <a href="tel:+966507158682">+966507158682</a>
             </div>
             <div class="col-md-4">
                 <p>{{ __('index.35') }} </p>

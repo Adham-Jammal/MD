@@ -257,9 +257,9 @@
 } */
 .works .owl-carousel .owl-item img{
     display: block;
-    max-width: 800px;
-    max-height: 350px;
     width: 100%;
+    max-width: 800px;
+    height: 300px;
     margin: 0 auto;
     padding: 25px;
     border-radius: 30px;
@@ -271,7 +271,8 @@
     position: relative;
 }
 .advantages h2{
-    text-align: center;
+    width: 75%;
+    margin: 0 auto;
     font-weight: 300;
     font-size: 2.4rem;
     margin-bottom: 50px;
@@ -494,7 +495,9 @@
 }
 /* Responsive */
 @media (min-width:1200px){
-
+    .works .owl-carousel .owl-item img{
+        width: 400px;
+    }
 }
 @media (max-width:1200px){
 
@@ -529,10 +532,7 @@
     .hero .mobile-text{
         display: block;
     }
-    .hero .line-svg{
-        width: 65%;
-        top: -12px !important;
-        }
+
     .hero #scroll{
         right: 30px;
         bottom: 30px;
@@ -590,12 +590,32 @@
         display: flex;
         flex-direction: column-reverse;
     }
+    .hero .line-svg{
+        position: absolute;
+        left: unset;
+        z-index: 2;
+        width: 45%;
+        right: 0;
+        top: -35px !important;
+    }
+    .advantages h2{
+        width: 100%;
+        text-align: center;
+    }
 }
 /* ************* */
 @media (max-width:500px){
     .cards-section .cards .card{
         width: 100%;
     }
+
+}
+@media (max-width:420px){
+    .hero .line-svg{
+        width: 55%;
+        top: 30px !important;
+        left: -80px !important;
+        }
 }
 @media (max-width:350px){
     .hero .line-svg{
@@ -606,7 +626,7 @@
 /* Scroll Top */
 #scroll_top{
     transform: rotate(-90deg);
-    right: 10px;
+    left: 10px;
     bottom: -60px;
 }
 @keyframes spin {

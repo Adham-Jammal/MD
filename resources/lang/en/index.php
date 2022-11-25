@@ -51,5 +51,6 @@ return [
     "47" => "At MD, we provide you with a comprehensive and flexible planning before assigning the plumbing task to specialized companies There is no doubt that you need the correct distribution of pipes to suit the requirements of daily life and place them in places that are easy to clean and maintain over time without the need to destroy the floor and walls .. In addition, ensure their high efficiency",
     "48" => "Residential Interior Design",
     "49" => "With a touch of originality, we design every space in your home after studying your functional needs and the ages of the house’s residents... by adding vitality through calming colors on the one hand, and mastery on the other",
+    "50" => "Profile",
 
 ];

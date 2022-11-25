@@ -132,14 +132,17 @@ a{
       transform: rotate(360deg);
     }
   }
+/* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-  appearance: none;
+  -webkit-appearance: none;
   margin: 0;
 }
+
+/* Firefox */
 input[type=number] {
-    appearance: textfield;
-  }
+  -moz-appearance: textfield;
+}
   /*Scroll Top*/
 #scroll_top{
     position: fixed;
@@ -170,4 +173,17 @@ input[type=number] {
         width: 330px;
     }
 
+}
+#whatsapp{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    right: 25px;
+    bottom: 25px;
+    color: white;
+    z-index: 9;
+    font-size: 35px;
+}
+#whatsapp:hover{
+    transform: scale(1.05);
 }

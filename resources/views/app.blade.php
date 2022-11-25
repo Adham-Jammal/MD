@@ -29,12 +29,14 @@
 <body>
     <div id="preloader"></div>
     <button id="scroll_top">&#10230;</button>
+    <a href="https://wa.me/message/TQ5L7BXTG5BHP1" id="whatsapp"><i class="bi bi-whatsapp"></i></a>
     {{-- <button id="scroll_top"><i class="bi bi-chevron-up"></i></button> --}}
     @include('layouts.header')
 
     @yield('main')
     @include('layouts.footer')
     <!-- JavaScript Bundle with Popper -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
         integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="

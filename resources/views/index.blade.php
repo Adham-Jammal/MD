@@ -12,7 +12,7 @@
                 <h2 data-aos="fade-up" data-aos-duration="500" data-aos-delay="400">{{ __('index.4') }} </h2>
                 <h2 data-aos="fade-up" data-aos-duration="500" data-aos-delay="600">{{ __('index.5') }} </h2>
             </div>
-            <p class="mobile-text">{{ __('index.6') }} </p>
+            {{-- <p class="mobile-text">{{ __('index.6') }} </p> --}}
         </div>
         <svg class="circle-svg" viewBox="0 0 100 100" >
             <path
@@ -202,15 +202,99 @@
                     <div class="row">
                         <div class="col-md-6 text-content">
                             <div class="content">
-                                <p><i class="bi bi-house-door"></i> Project Type : Housing </p>
-                                <p><i class="bi bi-arrows-fullscreen"></i> space : 200m<sup>2</sup></p>
+                                <p><i class="bi bi-house-door"></i> Project Type : Commercial </p>
+                                <p><i class="bi bi-arrows-fullscreen"></i> space : 120m<sup>2</sup></p>
                                 <hr>
-                                <a href="#">Download  <i class="bi bi-filetype-pdf"></i>   </a>
+                                <a href="{{ asset('PDFs/1.pdf') }}">Download  <i class="bi bi-filetype-pdf"></i>   </a>
                             </div>
 
                         </div>
                         <div class="col-md-6 image-content">
-                            <img loading="lazy" src="{{ asset('img/gallery-image-2.jpeg') }}" alt="galeery-image">
+                            <img loading="lazy" src="{{ asset('img/pdf-1.png') }}" alt="galeery-image">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="row">
+                        <div class="col-md-6 text-content">
+                            <div class="content">
+                                <p><i class="bi bi-house-door"></i> Project Type : Commercial </p>
+                                <p><i class="bi bi-arrows-fullscreen"></i> space : 377m<sup>2</sup></p>
+                                <hr>
+                                <a href="{{ asset('PDFs/2.pdf') }}">Download  <i class="bi bi-filetype-pdf"></i>   </a>
+                            </div>
+
+                        </div>
+                        <div class="col-md-6 image-content">
+                            <img loading="lazy" src="{{ asset('img/pdf-2.png') }}" alt="galeery-image">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="row">
+                        <div class="col-md-6 text-content">
+                            <div class="content">
+                                <p><i class="bi bi-house-door"></i> Project Type : Housing </p>
+                                <p><i class="bi bi-arrows-fullscreen"></i> space : 420m<sup>2</sup></p>
+                                <hr>
+                                <a href="{{ asset('PDFs/3.pdf') }}">Download  <i class="bi bi-filetype-pdf"></i>   </a>
+                            </div>
+
+                        </div>
+                        <div class="col-md-6 image-content">
+                            <img loading="lazy" src="{{ asset('img/pdf-3.png') }}" alt="galeery-image">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="row">
+                        <div class="col-md-6 text-content">
+                            <div class="content">
+                                <p><i class="bi bi-house-door"></i> Project Type : Housing  </p>
+                                <p><i class="bi bi-arrows-fullscreen"></i> space : 700m<sup>2</sup></p>
+                                <hr>
+                                <a href="{{ asset('PDFs/4.pdf') }}">Download  <i class="bi bi-filetype-pdf"></i>   </a>
+                            </div>
+
+                        </div>
+                        <div class="col-md-6 image-content">
+                            <img loading="lazy" src="{{ asset('img/pdf-4.png') }}" alt="galeery-image">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <div class="row">
+                        <div class="col-md-6 text-content">
+                            <div class="content">
+                                <p><i class="bi bi-house-door"></i> Project Type : Housing </p>
+                                <p><i class="bi bi-arrows-fullscreen"></i> space : 150m<sup>2</sup></p>
+                                <hr>
+                                <a href="{{ asset('PDFs/5.pdf') }}">Download  <i class="bi bi-filetype-pdf"></i>   </a>
+                            </div>
+
+                        </div>
+                        <div class="col-md-6 image-content">
+                            <img loading="lazy" src="{{ asset('img/pdf-5.png') }}" alt="galeery-image">
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="row">
+                        <div class="col-md-6 text-content">
+                            <div class="content">
+                                <p><i class="bi bi-house-door"></i> Project Type : Housing </p>
+                                <p><i class="bi bi-arrows-fullscreen"></i> space : 285m<sup>2</sup></p>
+                                <hr>
+                                <a href="{{ asset('PDFs/6.pdf') }}">Download  <i class="bi bi-filetype-pdf"></i>   </a>
+                            </div>
+
+                        </div>
+                        <div class="col-md-6 image-content">
+                            <img loading="lazy" src="{{ asset('img/pdf-6.png') }}" alt="galeery-image">
                         </div>
                     </div>
                 </div>
@@ -265,15 +349,16 @@
         <div class="container">
             <h2>{{ __('index.40') }}</h2>
             <div class="images partners-slider owl-carousel owl-drag owl-theme" data-aos="fade-up" data-aos-duration="1000">
-                <img loading="lazy" src="{{ asset('img/success-image-1.png') }}" alt="partner-image">
-                <img loading="lazy" src="{{ asset('img/success.png') }}" alt="partner-image" class="big-image">
-                <img loading="lazy" src="{{ asset('img/success-2.png') }}" alt="partner-image">
-                <img loading="lazy" src="{{ asset('img/success-3.png') }}" alt="partner-image">
-                <img loading="lazy" src="{{ asset('img/success-4.png') }}" alt="partner-image" class="big-image">
-                <img loading="lazy" src="{{ asset('img/success-6.png') }}" alt="partner-image">
-                {{-- <img loading="lazy" src="{{ asset('img/success-7.png') }}" alt="partner-image"> --}}
+                <img loading="lazy" src="{{ asset('img/slider-image-1.png') }}" class="big-image" alt="partner-image">
+                <img loading="lazy" src="{{ asset('img/slider-image-2.png') }}" alt="partner-image">
+                <img loading="lazy" src="{{ asset('img/slider-image-3.png') }}" alt="partner-image">
+                <img loading="lazy" src="{{ asset('img/slider-image-4.png') }}" alt="partner-image" >
+                <img loading="lazy" src="{{ asset('img/slider-image-6.png') }}" class="big-image" alt="partner-image">
+                <img loading="lazy" src="{{ asset('img/slider-image-7.png') }}" alt="partner-image">
+                <img loading="lazy" src="{{ asset('img/slider-image-8.png') }}" alt="partner-image">
                 <img loading="lazy" src="{{ asset('img/awaits.png') }}" alt="partner-image">
-                <img loading="lazy" src="{{ asset('img/success-9.png') }}" alt="partner-image">
+                <img loading="lazy" src="{{ asset('img/slider-image-9.jpg') }}" alt="partner-image">
+                <img loading="lazy" src="{{ asset('img/slider-image-10.png') }}" alt="partner-image">
             </div>
         </div>
     </section>
@@ -288,15 +373,15 @@
                     <h2>Contact us</h2>
                     <p>We are here for you.You can always contact us by filling the contact form</p>
                     <form action="#">
-                        <input type="text" name="name" id="name" placeholder="Full Name">
-                        <input type="email" name="email" id="email" placeholder="Email">
-                        <input type="number" name="space" id="space" placeholder="space">
-                        <select name="type" id="">
+                        <input class="input" type="text" name="fullName" id="fullName" placeholder="Full Name">
+                        <input class="input" type="email" name="email" id="email" placeholder="Email">
+                        <input class="input" type="number" name="space" id="space" placeholder="Space">
+                        <select class="input" name="type" id="type">
                             <option value="residential">residential</option>
                             <option value="commercial">commercial</option>
                         </select>
-                        <input type="number" name="phone" id="number" placeholder="phone">
-                        <input type="text" name="Notes" id="Notes" placeholder="Notes">
+                        <input class="input" type="number" name="phone" id="phoneNumber" placeholder="phone">
+                        <input class="input" type="text" name="notes" id="notes" placeholder="Notes">
                         <input type="submit" name="submit" id="submit" value="Send">
 
                     </form>
