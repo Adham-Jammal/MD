@@ -56,24 +56,21 @@
         width: 25px;
         top: -15px;
         position: absolute;
-        left: 25%;
+        right: 25%;
         }
     .hero .content h2.with-text{
-        display: inline-flex;
+        /*display: inline-flex;*/ /*small div case */
         justify-content: center;
     }
     .hero .content h2 span{
-        font-family: 'Cairo', sans-serif;
-        letter-spacing: 2px;
-        font-size: 1.8rem;
-        line-height: 25px;
+        font-size: 1.3rem;
+        line-height: 20px;
         font-weight: 200;
-        width: 32%;
-        margin-right: 15px;
-        display: flex;
-        text-align: right;
+        width: 40%;
+        margin-left: 15px;
+        display: inline-block;
+        text-align: left;
         text-transform: none;
-        align-items: center;
         z-index: 2;
     }
     .hero .mobile-text{
@@ -83,14 +80,14 @@
         font-weight: 200;
         text-transform: none;
         margin: 20px auto 0;
-        text-align: right;
+        text-align: left;
         display: none;
         z-index: 2;
     }
     .hero #scroll{
         position: absolute;
         text-transform: uppercase;
-        left: 100px;
+        right: 100px;
         bottom: 80px;
         color: #fff;
         font-size: 1.4rem;
@@ -107,22 +104,22 @@
         stroke-width: 1.7;
         width: 120px;
         position: absolute;
-        left: 45px;
-        bottom: 35px;
+        right: 55px;
+        bottom: 40px;
         color: #fff;
         font-size: 1.4rem;
         font-weight: 300;
         z-index: 2;
-        animation: spin 4s linear infinite;
+        animation:spin 4s linear infinite;
     }
     .hero .line-svg{
         position: absolute;
-        width: 50%;
+        width: 40%;
         margin-left: auto;
         margin-right: auto;
         left: 0;
-        right: 0;
-        top: 75px;
+        right: 150px;
+        top: 55px !important;
         z-index: 2;
     }
     .path-1 {
@@ -156,7 +153,6 @@
     padding: 75px 0;
    }
    .about .about-title{
-    letter-spacing: 5px;
     font-size: 16rem;
     font-weight: 300;
     color: rgba(255, 255, 255, 0.1);
@@ -189,8 +185,8 @@
     align-items: center;
 }
 .about .column ul li i{
-    transform: rotate(180deg);
     margin-left: 5px;
+    transform: scale(-1);
 }
 /* Works */
 .works{
@@ -198,29 +194,39 @@
     position: relative;
 }
 .works h2{
-    margin-bottom: 15px;
-    font-weight: 600;
-    font-size: 2rem;
+    text-align: center;
+    font-weight: 300;
+    font-size: 2.4rem;
+    margin-bottom: 50px;
 }
 .works .col-md-6{
     display: flex;
+    flex-wrap: wrap;
+    align-content: center;
     justify-content: center;
 }
 .works .content a{
     display: flex;
     align-items: center;
-    font-size: 1.4rem;
+    font-size: 2rem;
     font-weight: 400;
     color: var(--white);
+    border: 1px solid #454545;
+    width: 150px;
+    justify-content: space-evenly;
+    padding: 8px;
+    border-radius: 5px;
+}
+.works .content a:hover{
+    border-color: #fff;
 }
 .works .content a:hover .arrow{
-    transform: translateX(-5px) rotate(180deg);
+    transform: translateX(5px);
 }
 .works .content a .arrow{
     position: relative;
-    margin-right: 10px;
+    margin-left: 10px;
     font-size: 45px;
-    transform: rotate(180deg);
 }
 .works .content a .arrow svg{
     fill: none;
@@ -236,17 +242,31 @@
     font-weight: 300;
     z-index: -1;
 }
-.works .content p{
+.works .slide{
+    width: 75%;
+    margin:  0 auto;
+    border: 1px solid #454545;
+    border-radius: 8px;
+}
+.works .slide .text-content p {
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 25px;
+    margin-bottom: 15px;
+}
+/* .works .content p{
     font-size: 1.5rem;
     font-weight: 400;
     color: rgb(178, 178, 178);
-}
-.owl-carousel .owl-item img{
+} */
+.works .owl-carousel .owl-item img{
     display: block;
+    width: 100%;
     max-width: 800px;
-    max-height: 350px;
-    width: 50%;
+    height: 300px;
     margin: 0 auto;
+    padding: 25px;
+    border-radius: 30px;
 }
 
 /* ADVANTAGES */
@@ -255,7 +275,8 @@
     position: relative;
 }
 .advantages h2{
-    text-align: center;
+    width: 75%;
+    margin: 0 auto;
     font-weight: 300;
     font-size: 2.4rem;
     margin-bottom: 50px;
@@ -263,7 +284,7 @@
 .advantages p{
     font-size: 1.5rem;
     font-weight: 300;
-    line-height: 35px;
+    line-height: 25px;
     margin-bottom: 15px;
 }
 .advantages .image-content img{
@@ -280,7 +301,6 @@
     list-style-position: inside;
 }
 .advantages .text-content li{
-    font-family: 'Roboto', sans-serif;
     font-size: 1.6rem;
     font-weight: 500;
     line-height: 28px;
@@ -337,20 +357,20 @@
 .mission .slider .slide p{
     font-size: 2.6rem;
     font-weight: 400;
-    line-height: 40px;
+    line-height: 30px;
     width: 80%;
     margin: 0 auto;
     text-align: justify;
     text-align-last: center;
 }
 .mission span{
-    font-family: 'Italiana', sans-serif;
     position: absolute;
     top: -50%;
-    right: 8%;
+    left: 8%;
     font-size: 85rem;
     font-weight: 300;
     color: rgba(255, 255, 255, 0.1);
+
 }
 /* Cards-Section */
 .cards-section{
@@ -376,6 +396,7 @@
 .cards-section .cards .card p{
    font-size: 1.4rem;
 }
+
 /* gallery */
 .gallery{
     position: relative;
@@ -391,9 +412,12 @@
     justify-content: space-between;
     align-items: center;
 }
-.gallery .images img{
+/* .gallery .images img{
     width: 12%;
 }
+.gallery .images .big-image{
+    width: 7%;
+} */
 .gallery .single-image{
     display: flex;
     justify-content: center;
@@ -403,9 +427,78 @@
 .gallery .single-image img{
     width: 40%;
 }
+.gallery .owl-stage{
+    display: flex;
+    align-items: center;
+}
+.gallery .owl-carousel .owl-item img{
+    width: 70%;
+}
+.gallery .owl-carousel .owl-item .big-image{
+    width: 50%;
+}
+/* Contact */
+/* Contact */
+.contact-form{
+    padding: 75px 0;
+}
+.contact-form h2{
+    font-weight: 900;
+    font-size: 3.2rem;
+}
+
+.contact-form p{
+    font-size: 1.5rem;
+    opacity: .5;
+}
+.contact-form .map{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-form .map iframe{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+.contact-form form{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.contact-form form input, .contact-form form select{
+    border-bottom: 1px solid #fff;
+    padding: 10px;
+    width: 49%;
+    font-size: 1.4rem;
+    color: #fff;
+    margin: 15px 0;
+    background: transparent;
+}
+.contact-form form option{
+    background-color: #080808;
+}
+.contact-form form input[type='submit']{
+    width: 100%;
+    margin: 15px auto;
+    border: 1px solid #454545;
+    cursor: pointer;
+    background: transparent;
+    color: var(--white);
+    border-radius: 4px;
+    padding: 8px 40px;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+.contact-form form input[type='submit']:hover{
+    border-color: #fff;
+}
 /* Responsive */
 @media (min-width:1200px){
-
+    .works .owl-carousel .owl-item img{
+        width: 400px;
+    }
 }
 @media (max-width:1200px){
 
@@ -440,10 +533,7 @@
     .hero .mobile-text{
         display: block;
     }
-    .hero .line-svg{
-        width: 65%;
-        top: -12px !important;
-        }
+
     .hero #scroll{
         left: 30px;
         bottom: 30px;
@@ -482,6 +572,36 @@
     }
     .advantages p{
         text-align: center;
+        margin-top: 50px;
+    }
+    .works .slide{
+        width: 90%;
+        padding-bottom: 25px;
+    }
+    .works .slide .row{
+        flex-direction: column-reverse;
+    }
+    .works .slide .text-content p{
+        text-align: center;
+    }
+    .works .content a{
+        margin: 0 auto;
+    }
+    .contact-form .row{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .hero .line-svg{
+        position: absolute;
+        left: unset;
+        z-index: 2;
+        width: 45%;
+        right: 0;
+        top: -35px !important;
+    }
+    .advantages h2{
+        width: 100%;
+        text-align: center;
     }
 }
 /* ************* */
@@ -489,11 +609,25 @@
     .cards-section .cards .card{
         width: 100%;
     }
+
+}
+@media (max-width:420px){
+    .hero .line-svg{
+        width: 55%;
+        top: 30px !important;
+        left: -80px !important;
+        }
+}
+@media (max-width:350px){
+    .hero .line-svg{
+        width: 100%;
+        top: -60px !important;
+        }
 }
 /* Scroll Top */
 #scroll_top{
     transform: rotate(-90deg);
-    right: 10px;
+    left: 10px;
     bottom: -60px;
 }
 @keyframes spin {

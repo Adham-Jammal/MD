@@ -90,7 +90,7 @@
                 <div class="column col-6">
                     <div class="content">
                         <h4>Our goal at MD:</h4>
-                        <p>In MD, we have one goal; it has to enjoy the experience of changing your space with us
+                        <p>In MD, we have one goal; it has to enjoy the experience of changing your {{ __('index.55') }} with us
                             Because we combine between interior design services and launch imagination and creativity
                             without limits
                             Starting from the first word with us and ending with getting impressive results surpass what was
@@ -202,10 +202,10 @@
                     <div class="row">
                         <div class="col-md-6 text-content">
                             <div class="content">
-                                <p><i class="bi bi-house-door"></i> Project Type : Commercial </p>
-                                <p><i class="bi bi-arrows-fullscreen"></i> space : 120m<sup>2</sup></p>
+                                <p><i class="bi bi-house-door"></i> {{ __('index.61') }} : {{ __('index.62') }} </p>
+                                <p><i class="bi bi-arrows-fullscreen"></i> {{ __('index.55') }} : 120m<sup>2</sup></p>
                                 <hr>
-                                <a href="{{ asset('PDFs/1.pdf') }}">Download  <i class="bi bi-filetype-pdf"></i>   </a>
+                                <a href="{{ asset('PDFs/1.pdf') }}">{{ __('index.64') }}  <i class="bi bi-filetype-pdf"></i>   </a>
                             </div>
 
                         </div>
@@ -219,10 +219,10 @@
                     <div class="row">
                         <div class="col-md-6 text-content">
                             <div class="content">
-                                <p><i class="bi bi-house-door"></i> Project Type : Commercial </p>
-                                <p><i class="bi bi-arrows-fullscreen"></i> space : 377m<sup>2</sup></p>
+                                <p><i class="bi bi-house-door"></i> {{ __('index.61') }} : {{ __('index.62') }} </p>
+                                <p><i class="bi bi-arrows-fullscreen"></i> {{ __('index.55') }} : 377m<sup>2</sup></p>
                                 <hr>
-                                <a href="{{ asset('PDFs/2.pdf') }}">Download  <i class="bi bi-filetype-pdf"></i>   </a>
+                                <a href="{{ asset('PDFs/2.pdf') }}">{{ __('index.64') }}  <i class="bi bi-filetype-pdf"></i>   </a>
                             </div>
 
                         </div>
@@ -236,10 +236,10 @@
                     <div class="row">
                         <div class="col-md-6 text-content">
                             <div class="content">
-                                <p><i class="bi bi-house-door"></i> Project Type : Housing </p>
-                                <p><i class="bi bi-arrows-fullscreen"></i> space : 420m<sup>2</sup></p>
+                                <p><i class="bi bi-house-door"></i> {{ __('index.61') }} : {{ __('index.63') }} </p>
+                                <p><i class="bi bi-arrows-fullscreen"></i> {{ __('index.55') }} : 420m<sup>2</sup></p>
                                 <hr>
-                                <a href="{{ asset('PDFs/3.pdf') }}">Download  <i class="bi bi-filetype-pdf"></i>   </a>
+                                <a href="{{ asset('PDFs/3.pdf') }}">{{ __('index.64') }}  <i class="bi bi-filetype-pdf"></i>   </a>
                             </div>
 
                         </div>
@@ -253,10 +253,10 @@
                     <div class="row">
                         <div class="col-md-6 text-content">
                             <div class="content">
-                                <p><i class="bi bi-house-door"></i> Project Type : Housing  </p>
-                                <p><i class="bi bi-arrows-fullscreen"></i> space : 700m<sup>2</sup></p>
+                                <p><i class="bi bi-house-door"></i> {{ __('index.61') }} : {{ __('index.63') }}  </p>
+                                <p><i class="bi bi-arrows-fullscreen"></i> {{ __('index.55') }} : 700m<sup>2</sup></p>
                                 <hr>
-                                <a href="{{ asset('PDFs/4.pdf') }}">Download  <i class="bi bi-filetype-pdf"></i>   </a>
+                                <a href="{{ asset('PDFs/4.pdf') }}">{{ __('index.64') }}  <i class="bi bi-filetype-pdf"></i>   </a>
                             </div>
 
                         </div>
@@ -270,10 +270,10 @@
                     <div class="row">
                         <div class="col-md-6 text-content">
                             <div class="content">
-                                <p><i class="bi bi-house-door"></i> Project Type : Housing </p>
-                                <p><i class="bi bi-arrows-fullscreen"></i> space : 150m<sup>2</sup></p>
+                                <p><i class="bi bi-house-door"></i> {{ __('index.61') }} : {{ __('index.63') }} </p>
+                                <p><i class="bi bi-arrows-fullscreen"></i> {{ __('index.55') }} : 150m<sup>2</sup></p>
                                 <hr>
-                                <a href="{{ asset('PDFs/5.pdf') }}">Download  <i class="bi bi-filetype-pdf"></i>   </a>
+                                <a href="{{ asset('PDFs/5.pdf') }}">{{ __('index.64') }}  <i class="bi bi-filetype-pdf"></i>   </a>
                             </div>
 
                         </div>
@@ -286,10 +286,10 @@
                     <div class="row">
                         <div class="col-md-6 text-content">
                             <div class="content">
-                                <p><i class="bi bi-house-door"></i> Project Type : Housing </p>
-                                <p><i class="bi bi-arrows-fullscreen"></i> space : 285m<sup>2</sup></p>
+                                <p><i class="bi bi-house-door"></i> {{ __('index.61') }} : {{ __('index.63') }} </p>
+                                <p><i class="bi bi-arrows-fullscreen"></i> {{ __('index.55') }} : 285m<sup>2</sup></p>
                                 <hr>
-                                <a href="{{ asset('PDFs/6.pdf') }}">Download  <i class="bi bi-filetype-pdf"></i>   </a>
+                                <a href="{{ asset('PDFs/6.pdf') }}">{{ __('index.64') }}  <i class="bi bi-filetype-pdf"></i>   </a>
                             </div>
 
                         </div>
@@ -370,19 +370,19 @@
                     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14500.067433669716!2d46.6826688!3d24.6919472!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9bb82f20e03be9e9!2sHamad%20Tower!5e0!3m2!1sen!2s!4v1665963428398!5m2!1sen!2s" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <div class="col-md-5 form"  data-aos="zoom-out" data-aos-duration="1000">
-                    <h2>Contact us</h2>
-                    <p>We are here for you.You can always contact us by filling the contact form</p>
+                    <h2>{{ __('index.51') }}</h2>
+                    <p>{{ __('index.52') }}</p>
                     <form action="#">
-                        <input class="input" type="text" name="fullName" id="fullName" placeholder="Full Name">
-                        <input class="input" type="email" name="email" id="email" placeholder="Email">
-                        <input class="input" type="number" name="space" id="space" placeholder="Space">
+                        <input class="input" type="text" name="fullName" id="fullName" placeholder="{{ __('index.53') }}">
+                        <input class="input" type="email" name="email" id="email" placeholder="{{ __('index.54') }}">
+                        <input class="input" type="number" name="{{ __('index.55') }}" id="{{ __('index.55') }}" placeholder="{{ __('index.55') }}">
                         <select class="input" name="type" id="type">
-                            <option value="residential">residential</option>
-                            <option value="commercial">commercial</option>
+                            <option value="{{ __('index.56') }}">{{ __('index.56') }}</option>
+                            <option value="{{ __('index.57') }}">{{ __('index.57') }}</option>
                         </select>
-                        <input class="input" type="number" name="phone" id="phoneNumber" placeholder="phone">
-                        <input class="input" type="text" name="notes" id="notes" placeholder="Notes">
-                        <input type="submit" name="submit" id="submit" value="Send">
+                        <input class="input" type="number" name="phone" id="phoneNumber" placeholder="{{ __('index.58') }}">
+                        <input class="input" type="text" name="notes" id="notes" placeholder="{{ __('index.59') }}">
+                        <input type="submit" name="submit" id="submit" value="{{ __('index.60') }}">
 
                     </form>
                 </div>
